@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEE PEE Singapore Shop</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -141,7 +141,7 @@ main {
 
 .offer-category {
     margin-bottom: 40px;
-    background-color: rgb(254, 218, 255);
+    background-color: rgba(217, 202, 245, 0.918);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(216, 75, 245, 0.1);
@@ -193,6 +193,182 @@ footer {
     color: white;
     padding-top: 20px;
 }
+
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding-top: 30px;
+    }
+
+    .category-card {
+      background: #74e6e6;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .category-card:nth-child(2) {
+      background: #f87bd3;
+    }
+
+    .category-card:nth-child(3) {
+      background: #e7186e;
+    }
+
+    .category-card img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+      font-display: 10px;
+    }
+
+    .category-card h3 {
+      color: #c42162;
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+    }
+
+    .category-card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .shop-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      border: 1px solid #c42162;
+      border-radius: 25px;
+      color: #c42162;
+      background: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .shop-btn:hover {
+      background: #c42162;
+      color: white;
+    }
+
+    .see-all {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .see-all a {
+      color: #c42162;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .mr{
+      padding: 80px;
+      row-gap: 20px;
+    }
+.banner-section{
+  padding: 5px;
+}
+
+
+.features-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+}
+
+.feature i {
+  font-size: 30px;
+  color: #d42c87;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background-color: #ccc;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  color: #000;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #75828a;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #d42c87;
+}
+
+.footer-column p {
+  color: #75828a;
+  margin: 8px 0;
+}
+
+.footer-column i {
+  color: #d42c87;
+  margin-right: 8px;
+}
+.footer-line {
+  border: none;
+  height: 1px;
+  background-color: #cdd1d5; /* soft gray similar to the image */
+  margin: 20px 0; /* adjust spacing above/below the line */
+}
+
  </style>
 </head>
 <body>
@@ -263,7 +439,7 @@ function carousel() {
 
 
 <h1>What's New</h1>
-<h2> Here Come The New X200 FE</h2>
+<h2> Here Comes The New X200 FE</h2>
 <video width="1000" height="500" autoplay muted>
   <source src="x2.mp4" type="video/mp4">
 </video>
@@ -312,92 +488,8 @@ function carousel() {
           </div>
       </section>
   </main>
-<body>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #fff;
-    }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #111;
-    }
-
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding-top: 30px;
-    }
-
-    .category-card {
-      background: #fdeaf2;
-      border-radius: 20px;
-      padding: 20px;
-      text-align: center;
-      position: relative;
-    }
-
-    .category-card:nth-child(2) {
-      background: #fdd6f1;
-    }
-
-    .category-card:nth-child(3) {
-      background: #ffe3e3;
-    }
-
-    .category-card img {
-      width: 100px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    .category-card h3 {
-      color: #c42162;
-      margin: 10px 0 5px;
-      font-size: 1.2rem;
-    }
-
-    .category-card p {
-      margin: 0;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    .shop-btn {
-      margin-top: 10px;
-      padding: 8px 16px;
-      border: 1px solid #c42162;
-      border-radius: 25px;
-      color: #c42162;
-      background: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .shop-btn:hover {
-      background: #c42162;
-      color: white;
-    }
-
-    .see-all {
-      text-align: right;
-      margin-bottom: 20px;
-    }
-
-    .see-all a {
-      color: #c42162;
-      font-weight: bold;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-
+  
   <div class="see-all">
     <a href="#">See All</a>
   </div>
@@ -451,10 +543,94 @@ function carousel() {
     </div>
   </div>
 
-
   
+  <marquee class="mr" >
+ <img src="s2.jpg" width="300" height="300" alt="Natural" />
+ <img src="s4.jpg" width="300" height="300" alt="Natural" />
+ <img src="s5.jpg" width="300" height="300" alt="Natural" />
+ <img src="s6.jpg" width="300" height="300" alt="Natural" />
+ <img src="s7.jpg" width="300" height="300" alt="Natural" />
+ <img src="s8.jpg" width="300" height="300" alt="Natural" />
+ <img src="s9.jpg" width="300" height="300" alt="Natural" />
+ <img src="s10.jpg" width="300" height="300" alt="Natural" />
+  </marquee>
+
+
+  <div class="banner-section">
+    <h2>Discover a wide variety of <strong>15000+ Products</strong></h2>
+  </div>
+  
+  <div class="features-section">
+    <div class="feature">
+      <i class="fas fa-truck"></i>
+      <p>Fast Delivery</p>
+    </div>
+    <div class="divider"></div>
+    <div class="feature">
+      <i class="fas fa-headset"></i>
+      <p>Customer support</p>
+    </div>
+    <div class="divider"></div>
+    <div class="feature">
+      <i class="fas fa-undo"></i>
+      <p>7 day return Policy</p>
+    </div>
+    <div class="divider"></div>
+    <div class="feature">
+      <i class="fas fa-shield-alt"></i>
+      <p>Safe Checkout</p>
+    </div>
+  </div>
+  <hr class="footer-line">
+
+  <footer class="footer">
+    <div class="footer-column">
+      <h4>ABOUT US</h4>
+      <ul>
+        <li><a href="#">The Brand Story</a></li>
+        <li><a href="#">Mission and Vision</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-column">
+      <h4>SHOP</h4>
+      <ul>
+        <li><a href="#">True Wireless Earbuds</a></li>
+        <li><a href="#">Wired Earphones</a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-column">
+      <h4>QUICK LINKS</h4>
+      <ul>
+        <li><a href="#">Audio Devices</a></li>
+        <li><a href="#">Offers & Gifts</a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-column">
+      <h4>TERMS & CONDITIONS</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Pricing Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Return and Refund</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#" style="color: #d42c87;">REGISTER YOUR PRODUCT</a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-column">
+      <h4>CONTACT US</h4>
+      <p><i class="fas fa-phone-alt"></i> 9865021220</p>
+      <p><i class="fas fa-envelope"></i>gpsingaporeshop.annur@gmail.com </p>
+  
+    </div>
+  </footer>
   <footer>
       <p>&copy; 2025 GEEPEE Singapore Shop. All rights reserved.</p>
   </footer>
-</body>
+  </body>
 </html>
