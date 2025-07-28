@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Catalog Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .catalog-section {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .product-card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to right, #bce2e7, #d9f1ee);
+      color: rgb(17, 16, 16);
+      padding: 40px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .product-card:nth-child(2) {
+      background: linear-gradient(to right, #ebc6ee, #f6b8fc);
+    }
+
+    .product-card img {
+      max-height: 200px;
+      margin-right: 20px;
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
+    .product-title {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .product-subtitle {
+      font-size: 24px;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+
+    .product-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #a5fa6d;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .product-button:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="catalog-section">
+
+    <div class="product-card">
+      <img src="mobile.jpg" alt="mobile">
+      <div class="product-info">
+        <div class="product-title">MOBILE PHONES</div>
+        <div class="product-subtitle">Your world in your palm</div>
+        <a href="#" class="product-button"> View Smart phone</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="access.jpg" alt="access">
+      <div class="product-info">
+        <div class="product-title">ACCESSORIES</div>
+        <div class="product-subtitle">The perfect partners for your phone</div>
+        <a href="#" class="product-button">View Headphones</a>
+      </div>
+    </div>
+</div>
+
+</style>
+</head>
+<body>
+
+<div class="catalog-section">
+
+  <div class="product-card">
+    <img src="watch.jpg" alt="watch">
+    <div class="product-info">
+      <div class="product-title">WATCHES</div>
+      <div class="product-subtitle">Wear the moment</div>
+      <a href="#" class="product-button"> View Wtaches</a>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="bag.jpg" alt="bag">
+    <div class="product-info">
+      <div class="product-title">BAGS</div>
+      <div class="product-subtitle">Carry your world in style</div>
+      <a href="#" class="product-button">View bags</a>
+    </div>
+  </div>
+</div>
+
+<div class="catalog-section">
+
+    <div class="product-card">
+      <img src="gift.jpg" alt="gift">
+      <div class="product-info">
+        <div class="product-title">GIFTS</div>
+        <div class="product-subtitle">The joy of giving</div>
+        <a href="#" class="product-button"> View Gifts</a>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <img src="cello.jpg" alt="home app">
+      <div class="product-info">
+        <div class="product-title">HOME APPLIANCES</div>
+        <div class="product-subtitle">Home comfort, redefined</div>
+        <a href="#" class="product-button">View Home Applainces</a>
+      </div>
+    </div>
+  </div>
+  
+<div class="catalog-section">
+
+    <div class="product-card">
+      <img src="mens.jpg" alt="gift">
+      <div class="product-info">
+        <div class="product-title">MENS COLLECTIONS</div>
+        <div class="product-subtitle">Upgrade your everyday</div>
+        <a href="#" class="product-button"> View Mens Collections</a>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <img src="toy.jpg" alt="toy">
+      <div class="product-info">
+        <div class="product-title">TOYS</div>
+        <div class="product-subtitle">Joy in every toy</div>
+        <a href="#" class="product-button">View Toys</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
