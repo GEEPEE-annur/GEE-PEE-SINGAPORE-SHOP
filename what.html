@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Now via WhatsApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 30px;
+    }
+    .buy-now-btn {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .form-container {
+      margin-top: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .send-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="buy-now-btn" onclick="document.getElementById('form').style.display='block'">Click Here</button>
+
+  <div class="form-container" id="form" style="display:none;">
+    <h3>Enter Your Details</h3>
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <input type="text" id="address" placeholder="Shipping Address" required>
+    <input type="text" id="product" placeholder="Product Name / ID" required>
+
+    <button class="send-btn" onclick="sendToWhatsApp()">Send to WhatsApp</button>
+  </div>
+
+  <script>
+    function sendToWhatsApp() {
+      let name = document.getElementById("name").value;
+      let phone = document.getElementById("phone").value;
+      let address = document.getElementById("address").value;
+      let product = document.getElementById("product").value;
+
+      // Replace this with your WhatsApp number in international format (no + or 00)
+      let whatsappNumber = "919865021220";
+
+      let message = `New Order Details:%0A%0A👤 Name: ${name}%0A📱 Phone: ${phone}%0A🏠 Address: ${address}%0A📦 Product: ${product}`;
+
+      let whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+
+</body>
+</html>
