@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watches</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.flip-card-back h2 {
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff9900;
+}
+</style>
+</head>
+<body>
+
+<h1>Stylish Watch Collection</h1>
+
+<div class="catalog">
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="titan.jpg" alt="Titan">
+      </div>
+      <div class="flip-card-back">
+        <h2>Titan</h2>
+        <button onclick="window.location.href='titan.html'">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="sonex.png" alt="Sonex">
+      </div>
+      <div class="flip-card-back">
+        <h2>Sonex</h2>
+        <button onclick="window.location.href='sonex.html'">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="sonata.jpg" alt="Sonata">
+      </div>
+      <div class="flip-card-back">
+        <h2>Sonata</h2>
+        <button onclick="window.location.href='sonata.html'">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="lamex.png" alt="Lamex">
+      </div>
+      <div class="flip-card-back">
+        <h2>Lamex</h2>
+        <button onclick="window.location.href='lamex.html'">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="lenco.png" alt="Lenco">
+      </div>
+      <div class="flip-card-back">
+        <h2>Lenco</h2>
+        <button onclick="window.location.href='lenco.html'">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="fastrack.png" alt="Fastrack">
+      </div>
+      <div class="flip-card-back">
+        <h2>Fastrack</h2>
+        <button onclick="window.location.href='fastrack.html'">Buy Now</button>
+      </div>
+    </div>
+  </div> <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="timex.png" alt="Timex">
+      </div>
+      <div class="flip-card-back">
+        <h2>Timex</h2>
+        <button onclick="window.location.href='timex.html'">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="proglxy.png" alt="Pro-Glaxy">
+      </div>
+      <div class="flip-card-back">
+        <h2>Pro-Glaxy</h2>
+        <button onclick="window.location.href='proglaxy.html'">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assemble.png" alt="Assemble">
+      </div>
+      <div class="flip-card-back">
+        <h2>Assemble</h2>
+        <button onclick="window.location.href='assemble.html'">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
