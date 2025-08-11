@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessories Catalog</title>
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    }
+
+    h1 {
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(90deg, #ff758c, #ff7eb3);
+        color: white;
+        font-size: 2.2em;
+        letter-spacing: 1px;
+    }
+
+    .catalog {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .item {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        padding: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+        border: 3px solid transparent;
+    }
+
+    .item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        border-color: #ff7eb3;
+    }
+
+    .item img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .item p {
+        margin: 0;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .item span {
+        display: inline-block;
+        margin-top: 5px;
+        padding: 3px 8px;
+        background: #ff7eb3;
+        color: white;
+        border-radius: 8px;
+        font-size: 0.85em;
+    }
+</style>
+</head>
+<body>
+
+<h1>Accessories Catalog</h1>
+
+<div class="catalog">
+  <a href="chargers.html" class="item">
+    <img src="adapter.png" alt="Charger">
+    <p>Chargers</p>
+    <span>Fast & Durable</span>
+</a>
+
+    <div class="item">
+        <img src="usb.png" alt="Cable">
+        <p>Cables</p>
+        <span>High Quality</span>
+    </div>
+    <div class="item">
+        <img src="https://img.icons8.com/color/96/headphones.png" alt="Headphones">
+        <p>Headphones</p>
+        <span>Crystal Clear</span>
+    </div>
+    <div class="item">
+        <img src="https://img.icons8.com/color/96/bluetooth.png" alt="Bluetooth">
+        <p>Bluetooth</p>
+        <span>Wireless Tech</span>
+    </div>
+    <div class="item">
+        <img src="https://img.icons8.com/color/96/usb-memory-stick.png" alt="Pen Drive">
+        <p>Pen Drives</p>
+        <span>Secure Storage</span>
+    </div>
+    <div class="item">
+        <img src="https://img.icons8.com/color/96/sd.png" alt="SD Card">
+        <p>SD Cards</p>
+        <span>High Capacity</span>
+    </div>
+    <div class="item">
+        <img src="https://img.icons8.com/color/96/microphone.png" alt="Mic">
+        <p>Microphones</p>
+        <span>Pro Audio</span>
+    </div>
+    <div class="item">
+        <img src="loud-speaker.png" alt="Mobile Stand">
+        <p>Mobile Stands</p>
+        <span>Adjustable</span>
+    </div>
+    <div class="item">
+        <img src="https://img.icons8.com/color/96/speaker.png" alt="Speaker">
+        <p>Speakers</p>
+        <span>Loud & Clear</span>
+    </div>
+    <div class="item">
+        <img src="flashlight.png" alt="Torch Light">
+        <p>Torch Lights</p>
+        <span>Bright Beam</span>
+    </div>
+    <div class="item">
+        <img src="https://img.icons8.com/color/96/wifi-router.png" alt="Wi-Fi Modem">
+        <p>Wi-Fi Modems</p>
+        <span>High Speed</span>
+    </div>
+</div>
+
+</body>
+</html>
+
