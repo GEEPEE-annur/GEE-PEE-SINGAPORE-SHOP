@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bag Collection</title>
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    }
+    h1 {
+        text-align: center;
+        padding: 20px;
+        color: #333;
+        font-size: 2em;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    .catalog {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+        padding: 20px;
+    }
+    .category {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        border: 3px solid transparent;
+    }
+    .category:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        border: 3px solid #ff7f50;
+    }
+    .category img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 3px solid #ff7f50;
+    }
+    .category h3 {
+        margin: 0;
+        padding: 15px;
+        background: linear-gradient(135deg, #ff7f50, #ffb347);
+        color: white;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+</style>
+</head>
+<body>
+
+<h1>👜 Bag Collection</h1>
+
+<div class="catalog">
+    <a href="school-bags.html" class="category">
+        <img src="schl.png" alt="School Bags">
+        <h3>School Bags</h3>
+    </a>
+    <a href="college-bags.html" class="category">
+        <img src="clg.jpg" alt="College Bags">
+        <h3>College Bags</h3>
+    </a>
+    <a href="hand-bags.html" class="category">
+        <img src="hand.png" alt="Hand Bags">
+        <h3>Hand Bags</h3>
+    </a>
+    <a href="sling-bags.html" class="category">
+        <img src="sling.jpg" alt="Sling Bags">
+        <h3>Sling Bags</h3>
+    </a>
+    <a href="hand-purse.html" class="category">
+        <img src="purse.jpg" alt="Hand Purse">
+        <h3>Hand Purse</h3>
+    </a>
+    <a href="travel.html" class="category">
+        <img src="travel.png" alt="Travel bag">
+        <h3>Travel Bag</h3>
+    </a>
+    <a href="suit.html" class="category">
+        <img src="suit.jpg" alt="suitcase">
+        <h3>Suitcase</h3>
+    </a>
+</div>
+
+</body>
+</html>
