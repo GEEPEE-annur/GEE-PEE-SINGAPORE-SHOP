@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Items Catalog</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #fdfbfb, #ebedee);
+    }
+    h1 {
+        text-align: center;
+        padding: 20px;
+        color: #333;
+    }
+    .catalog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    .item {
+        width: 220px;
+        height: 300px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+    .item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(135deg, #a8edea, #fed6e3);
+        z-index: 0;
+    }
+    .item img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        position: relative;
+        z-index: 1;
+        margin-top: 30px;
+        transition: transform 0.3s ease;
+    }
+    .item h3 {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin-top: 15px;
+        color: #333;
+    }
+    .item button {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 8px 15px;
+        background: #ff5f6d;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    .item button:hover {
+        background: #ff2e4d;
+    }
+    .item:hover {
+        transform: translateY(-10px);
+    }
+    .item:hover img {
+        transform: scale(1.1);
+    }
+    /* Shelf effect */
+    .catalog::after {
+        content: '';
+        width: 100%;
+        height: 5px;
+        background: #aaa;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        position: relative;
+        top: -10px;
+    }
+</style>
+</head>
+<body>
+
+<h1>🏠 Home Items </h1>
+
+<div class="catalog">
+    <div class="item">
+        <img src="https://cdn-icons-png.flaticon.com/512/2809/2809590.png" alt="Water Bottle">
+        <h3>Water Bottles</h3>
+        <button>View Collection</button>
+    </div>
+    <div class="item">
+        <img src="https://cdn-icons-png.flaticon.com/512/3082/3082032.png" alt="Hot Pack">
+        <h3>Hot Packs</h3>
+        <button>View Collection</button>
+    </div>
+    <div class="item">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Flask">
+        <h3>Flasks</h3>
+        <button>View Collection</button>
+    </div>
+    <div class="item">
+        <img src="https://cdn-icons-png.flaticon.com/512/3082/3082042.png" alt="Dinner Set">
+        <h3>Dinner Set</h3>
+        <button>View Collection</button>
+    </div>
+</div>
+
+</body>
+</html>
