@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gift Catalog</title>
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f7f2f2;
+        padding: 40px;
+        text-align: center;
+    }
+    h1 {
+        color: #333;
+        margin-bottom: 30px;
+    }
+    .catalog {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .gift {
+        position: relative;
+        width: 100%;
+        height: 270px;
+        background: linear-gradient(135deg, #ff4d6d, #ff85a1);
+        border-radius: 12px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    .gift:hover {
+        transform: scale(1.03);
+    }
+
+    /* Wrapping Shine */
+    .gift::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(120deg, rgba(255,255,255,0.3), transparent, rgba(255,255,255,0.3));
+        transform: skewX(-25deg);
+        animation: shine 3s infinite;
+        z-index: 1;
+    }
+    @keyframes shine {
+        0% { left: -50%; }
+        100% { left: 100%; }
+    }
+
+    /* Ribbon vertical */
+    .ribbon-vertical {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff0f5;
+        width: 30px;
+        height: 100%;
+        z-index: 2;
+    }
+    /* Ribbon horizontal */
+    .ribbon-horizontal {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background: #fff0f5;
+        width: 100%;
+        height: 30px;
+        z-index: 2;
+    }
+
+    /* Bow on top */
+    .bow {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        width: 60px;
+        height: 60px;
+    }
+    .bow::before, .bow::after {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        background: #ff3b6f;
+        border-radius: 50%;
+        top: 15px;
+    }
+    .bow::before {
+        left: -60px;
+    }
+    .bow::after {
+        left: 60px;
+    }
+    .bow-center {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: #ff3b6f;
+        border-radius: 50%;
+        top: 15px;
+        left: 15px;
+    }
+
+    /* Inside content */
+    .gift-content {
+        position: absolute;
+        inset: 0;
+        background: white;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transform: scale(0.9);
+        transition: all 0.5s ease;
+        z-index: 4;
+    }
+    .gift.open .gift-content {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .gift-content h2 {
+        margin-bottom: 15px;
+    }
+    .gift-content button {
+        background: #ff4d6d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    .gift-content button:hover {
+        background: #e63e5e;
+    }
+</style>
+</head>
+<body>
+
+<h1>🎁 Gift Catalog 🎁</h1>
+
+<div class="catalog">
+    <div class="gift" onclick="openGift(this)">
+        <div class="ribbon-vertical"></div>
+        <div class="ribbon-horizontal"></div>
+        <div class="bow">
+            <div class="bow-center"></div>
+        </div>
+        <div class="gift-content">
+            <h2>Wedding Gifts</h2>
+            <button onclick="location.href='wedding-gifts.html'">Open</button>
+        </div>
+    </div>
+
+    <div class="gift" onclick="openGift(this)">
+        <div class="ribbon-vertical"></div>
+        <div class="ribbon-horizontal"></div>
+        <div class="bow">
+            <div class="bow-center"></div>
+        </div>
+        <div class="gift-content">
+            <h2>Birthday Gifts</h2>
+            <button onclick="location.href='birthday-gifts.html'">Open</button>
+        </div>
+    </div>
+
+    <div class="gift" onclick="openGift(this)">
+        <div class="ribbon-vertical"></div>
+        <div class="ribbon-horizontal"></div>
+        <div class="bow">
+            <div class="bow-center"></div>
+        </div>
+        <div class="gift-content">
+            <h2>Toys</h2>
+            <button onclick="location.href='toys.html'">Open</button>
+        </div>
+    </div>
+    <div class="gift" onclick="openGift(this)">
+        <div class="ribbon-vertical"></div>
+        <div class="ribbon-horizontal"></div>
+        <div class="bow">
+            <div class="bow-center"></div>
+        </div>
+        <div class="gift-content">
+            <h2>Sceneries</h2>
+            <button onclick="location.href='sceneries.html'">Open</button>
+        </div>
+    </div>
+    <div class="gift" onclick="openGift(this)">
+        <div class="ribbon-vertical"></div>
+        <div class="ribbon-horizontal"></div>
+        <div class="bow">
+            <div class="bow-center"></div>
+        </div>
+        <div class="gift-content">
+            <h2>Statues</h2>
+            <button onclick="location.href='stat.html'">Open</button>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+function openGift(element) {
+    element.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
