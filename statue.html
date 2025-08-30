@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Catalog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .product {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .tag {
+      background: #d9534f;
+      color: white;
+      font-size: 14px;
+      padding: 3px 10px;
+      position: absolute;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    .info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .info h3 {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .price {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: gray;
+      margin-right: 5px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">🎁 Gift Collection 🎁</h2>
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="1.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="2.png" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="3.png" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="4.png" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="5.png" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="6.png" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="7.png" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="8.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="9.png" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="10.png" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="11.png" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="12.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="13.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="14.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="15.png" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="16.png" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="17.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="18.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="19.png" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="20.png" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="21.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="22.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="23.png" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="24.png" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="25.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="26.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="27.png" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="28.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="29.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="30.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="31.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="32.png" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="33.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="34.png" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="35.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="36.png" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="37.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="38.png" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="39.png" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="40.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="41.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="42.png" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="43.png" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="44.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="45.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="46.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="47.png" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="48.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="49.png" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="50.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="51.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="52.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="53.png" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="54.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="55.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="56.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="57.png" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="58.png" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="59.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="60.png" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="61.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="62.png" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="63.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="64.png" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="65.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="66.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="67.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="68.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="69.png" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="70.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="71.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="72.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="73.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="74.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="75.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="76.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="77.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="78.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="79.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="80.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="catalog">
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="81.png" alt="Gift Item">
+      <div class="info">
+        <h3>Brass Blessing Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,200</span> ₹1,600</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="tag">SALE</div>
+      <img src="82.png" alt="Gift Item">
+      <div class="info">
+        <h3>Lord Krishna Statue 12"</h3>
+        <p class="price"><span class="old-price">₹3,500</span> ₹2,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="83.jpg" alt="Gift Item">
+      <div class="info">
+        <h3>Handcrafted Cow & Calf Idol</h3>
+        <p class="price"><span class="old-price">₹2,800</span> ₹1,999</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="84.png" alt="Gift Item">
+      <div class="info">
+        <h3>Small Sitting Buddha Idol 7"</h3>
+        <p class="price"><span class="old-price">₹2,000</span> ₹1,499</p>
+        <a href="what.html" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
